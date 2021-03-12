@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 6b</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .rect:hover { opacity: 0.5; }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1> Boston Needs Improvements: D3 Visualizations</h1>
+    <h2> Reshan Fernando</h2>
+    <p>Data provided from https://www.cityofboston.gov/311/</p>
+    <h2>Horizantal Bar Chart</h2>
+    <svg id="horizontal" width ="960" height = "500">
+    </svg>
+     <p>The distribution of subjects of reports indicates that the Public Works Department 
+         has the highest amount of incidents, followed by 
+         Transportation - Traffic Division and Inspectional Services.
+    </p>
+    <h2>Scatter Plot</h2>
+    <svg id="scatter" width ="960" height = "500">
+    </svg>
+    <p> I used Excel filter functions and Pivot Tables 
+        to reduce the given data to only include the latitude, longitude, and subject for each point.
+        The scatterplot reveals a slight negative correlation in the spacial distribution between latitude and longitude -
+        higher latitude seems to correlate with higher longitude.  
+    </p>
+    <h2>Line Chart</h2>
+    <svg id="linechart" width ="960" height = "500">
+    </svg>
+    <p>This Line chart depicts the total amount of incidents for two subjects: the Parks and Recreation Department, and Inspectional Services.
+        The incidents are depicted over the course of January and February, with dates measured as the X-axis. 
+        The depiction reveals that in general, both subjects experience spikes in incident amounts on the same days. 
+        Additionally, the total amount of daily incidents for Inspectional Services commonly outnumber the total amount of daily 
+        incidents for the P&R department. 
+    </p>
+    <h2>Custom Scatter Plot</h2>
+    <svg id="scatter" width ="960" height = "500">
+    </svg>
+    <p>This is a custom plot, depicting the spatial distribution of all Employee Generated incidents.</p>
+    <!--script type="text/javascript" src="horizontalbar.js"></script--> 
+    <script type="text/javascript" src="scatterplot.js"></script>
+    <!--script type="text/javascript" src="linechart.js"></script-->
+    <!--script type="text/javascript" src="custom.js"></script-->
+</body>
+</html>
